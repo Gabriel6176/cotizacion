@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Listado de Presupuestos</title>
+    </head>
+    <body>
+        <h1>Listado de Presupuesto</h1>
+            <ul>
+                {% for p in presupuestos %}
+                    <li> Numero de Presupuesto: {{p.numero_presupuesto}} - Cliente: {{p.cliente}}</li>
+                {% endfor%}
+            </ul>
+        </form>  
+    </body>
+</html>

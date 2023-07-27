@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalle de Presupuesto {{ presupuesto.numero_presupuesto }}</title>
+</head>
+<body>
+    <div>
+        <h1>Detalle de Presupuesto</h1>
+        <form>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Numero de Presupuesto:</label>
+                <div>
+                    <input class="form-control" placeholder='Numero presupuesto' value="{{ presupuesto.numero_presupuesto }}"></input>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-2 col-form-label">Cliente:</label>
+                <div>
+                    <input class="form-control" placeholder='Cliente' value="{{ presupuesto.cliente }}"></input>
+                </div>
+            </div>
+            
+            <ul class="list-group">
+                <li class="list-group-item">Cantidad: {{ventanas.cantidad}} </li>
+            </ul>
+            
+        </form>
+
+    </div>
+    
+    </br>
+    
+</body>
+</html>
+

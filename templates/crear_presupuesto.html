@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Crear Presupuesto</title>
+  </head>
+  <body>
+    <h1>Crear Presupuesto</h1>
+    <form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+      <input type="submit" value="crear_presupuesto">
+    </form>  
+  </body>
+</html>

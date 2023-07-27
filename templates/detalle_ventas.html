@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Ventanas</title>
+</head>
+<body>
+    <h1>Lista de Ventanas</h1>
+    <ul>
+        {% for v in ventanas %}
+        <li>Tipo: {{ v.tipo }} - Ancho: {{ v.ancho }}, Alto: {{ v.alto }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

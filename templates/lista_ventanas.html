@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Ventanas</title>
+    </head>
+    <body>
+        <h1>Lista de Ventanas</h1>
+        <ul>
+            {% for v in ventanas %}
+                <li>{{ v }}</li>
+            {% endfor %}
+        </ul>
+        <a href="{% url 'crear_presupuesto' %}">Crear nuevo presupuesto</a>
+    </body>
+</html>
